@@ -23,7 +23,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let song_info = String::from_utf8_lossy(&output.stdout).trim().to_string();
 
         if song_info == previous_song_info {
-            thread::sleep(Duration::from_secs(15));
+            thread::sleep(Duration::from_secs(5));
             continue;
         }
 
